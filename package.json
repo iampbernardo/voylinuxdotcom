@@ -1,0 +1,32 @@
+{
+  "name": "voylinuxdotcom",
+  "version": "0.0.1",
+  "description": "my personal blog template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/voylinux/voylinuxdotcom"
+  },
+  "keywords": [
+    "blog",
+    "ghost",
+    "template"
+  ],
+  "author": "Pablo Bernardo @voylinux",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/voylinux/voylinuxdotcom/issues"
+  },
+  "homepage": "https://github.com/voylinux/voylinuxdotcom",
+  "dependencies": {
+    "gulp": "^3.8.10",
+    "gulp-stylus": "^2.0.0"
+  },
+  "devDependencies": {
+    "gulp-connect": "^2.2.0",
+    "gulp-watch": "^3.0.0"
+  }
+}

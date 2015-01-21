@@ -1,0 +1,81 @@
+
+/** Styl imports */
+@require "normalize.styl"
+@import "lib/fonts.css"
+@require "lib/positions.styl"
+@require "lib/sizes.styl"
+@require "lib/navigation.styl"
+
+div,
+footer,
+article,
+section,
+header
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+
+/**
+  Variables
+*/
+
+
+/* fonts */
+font_primary = 'open_sansregular'
+font_secundary = 'Times New Roman', serif
+
+
+
+
+font_main_color = #333
+
+/* colors */
+color_links = orange
+color_titles = #333
+color_brand = blue
+
+footer_background = #232323
+footer_color = #EEE
+
+
+input[type="text"],
+textarea
+  background: non
+  border: 1px solid #CCC
+  border-radius: 3px
+  color: #555
+  box-shadow : inset 0 0 3px 1px #EEE
+  font-family: font_primary
+  padding: .2em .3em
+  &:focus
+    border-color: color_brand
+
+button,
+.button
+  background: none
+  border: 1px solid #CCC
+  border-radius: 3px
+
+/* Styles */
+
+html
+  font-family: font_primary
+  font-size: 16px
+  color: font_main_color
+
+a
+  color: red
+
+header.main-header
+  background: color_brand
+  color: #FFF
+
+footer.main-footer
+  background-color: footer_background
+  color: footer_color
+
+
+
+.wrapper
+  padding: 1em
