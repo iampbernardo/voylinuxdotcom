@@ -10,7 +10,8 @@ div,
 footer,
 article,
 section,
-header
+header,
+blockquote
   -webkit-box-sizing: border-box
   -moz-box-sizing: border-box
   box-sizing: border-box
@@ -23,18 +24,29 @@ header
 
 /* fonts */
 font_primary = 'open_sansregular'
-font_secundary = 'Times New Roman', serif
+font_primary_light = 'open_sanslight'
 
+font_secundary = 'merriweatherregular'
+font_secundary_bold = 'merriweatherbold'
+font_secundary_italic = 'merriweatherlight_italic'
 
 
 
 font_main_color = #333
 
 /* colors */
-color_links = orange
-color_titles = #333
-color_brand = blue
+brand_first = #00907C
+brand_second = #0E4198
+brand_third = #E69400
+brand_fourth = #E65F00
 
+dark_background = #3D3E41
+
+color_links = #00907C
+color_titles = #333
+color_brand = #00907C
+
+header_background = #0E4198
 footer_background = #232323
 footer_color = #EEE
 
@@ -60,22 +72,55 @@ button,
 /* Styles */
 
 html
+  //background: #F9F9F9
   font-family: font_primary
   font-size: 16px
   color: font_main_color
 
 a
-  color: red
+  color: brand_fourth
+  text-decoration: none
+  font-weight: bold
 
 header.main-header
-  background: color_brand
-  color: #FFF
+  //background: brand_third
+  color: #333
+
 
 footer.main-footer
-  background-color: footer_background
+  background-color: dark_background
   color: footer_color
 
+// TODO: just for debug
 
 
 .wrapper
   padding: 1em
+
+.content-text
+  font-size: 1.1em
+  a
+    &:hover
+      border-bottom: 1px dotted
+  i
+    font-family: font_primary_light
+  p
+  //font-family: font_secundary
+    line-height: 1.4
+  img
+    height: auto
+    width: 100%
+  blockquote
+    font-family: font_primary_light
+    color: lighten(font_main_color, 30%)
+    padding: 1em
+    margin-left: 0
+    font-size: 1.5em
+    width: 100%
+    border-left: 3px solid #E6E6E6
+  pre
+    border: 1px solid #8D8D8D
+    padding: 1em
+    text-align: left
+
+
