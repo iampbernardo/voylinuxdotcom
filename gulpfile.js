@@ -8,7 +8,7 @@ var gulp = require('gulp'),
 
 // Compile Stylus
 gulp.task('compile', function(){
-gulp.src('./src/styl/main.styl')
+gulp.src('./src/assets/styl/main.styl')
   .pipe(stylus({
     'include css': true
   }))
@@ -18,7 +18,7 @@ gulp.src('./src/styl/main.styl')
 
 // Watch styl files and then exeute compile
 gulp.task('watch_styl', function(){
-  gulp.watch('./src/styl/**/*.styl', ['compile']);
+  gulp.watch('./src/assets/styl/**/*.styl', ['compile']);
 });
 
 gulp.task('connect', function() {
