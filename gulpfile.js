@@ -12,7 +12,7 @@ gulp.src('./src/assets/styl/main.styl')
   .pipe(stylus({
     'include css': true
   }))
-  .pipe(gulp.dest('./src/css/'))
+  .pipe(gulp.dest('./src/assets/css/'))
   .pipe(connect.reload());
 });
 
