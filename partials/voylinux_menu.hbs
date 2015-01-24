@@ -2,7 +2,9 @@
 
 <div class="profile-menu-boxes full page-size">
       <aside class="profile-box padding block">
-          <img src="http://lorempixel.com/400/400/technics/1" alt="" class="profile-photo-box circle">
+        {{! Show logo that should be a squared photo}}
+          {{#if @blog.logo}}<img src="{{@blog.logo}}"
+            alt="" class="profile-photo-box circle">{{/if}}
           <nav class="secondary-nav navigation">
               <ul>
                   <li><a href="#">about me</a></li>
