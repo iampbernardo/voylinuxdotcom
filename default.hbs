@@ -4,7 +4,7 @@
     {{! Document Settings }}
     <meta charset="UTF-8">
 
-    {! Page Meta }}
+    {{! Page Meta }}
     <title>{{meta_title}}</title>
     <meta name="description" content="{{meta_description}}" />
 
@@ -22,7 +22,7 @@
 <body class="{{body_class}}">
 
     {{! Everything else gets inserted here }}
-    {{body}}
+    {{{body}}}
 
 
   <footer class="full main-footer padding">
@@ -30,6 +30,6 @@
   </footer><!--/end footer -->
   {{! Ghost outputs important scripts and data with this tag }}
   {{ghost_foot}}
-  <script src="/src/assets/js/main.js" async></script>
+  <script src="/assets/js/main.js" async></script>
 </body>
 </html>

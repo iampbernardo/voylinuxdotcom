@@ -499,6 +499,9 @@ th {
 .padding {
   padding: 1em;
 }
+.circle {
+  border-radius: 100%;
+}
 .navigation ul {
   list-style: none;
   padding: 0;
@@ -557,10 +560,12 @@ a {
   font-weight: bold;
 }
 header.main-header {
-  color: #f00;
+  color: #fff;
 }
 header.blog-header {
-  background-image: url("../img/header_bg.jpg");
+  background-position: center center;
+  background-size: cover;
+  min-height: 200px;
 }
 footer.main-footer {
   background-color: #3d3e41;
@@ -598,4 +603,58 @@ footer.main-footer {
   border: 1px solid #8d8d8d;
   padding: 1em;
   text-align: left;
+}
+.profile-menu-boxes {
+  display: flex;
+  flex-direction: column;
+}
+.profile-menu-boxes .profile-box {
+  order: 2;
+  text-align: center;
+}
+.profile-menu-boxes .profile-box img {
+  border: 1px solid #bbb;
+  width: 50%;
+}
+.profile-menu-boxes .profile-box nav {
+  padding: 0;
+}
+.profile-menu-boxes .profile-box nav ul {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 0;
+}
+.profile-menu-boxes .profile-box nav ul li {
+  width: 45%;
+}
+.profile-menu-boxes .profile-box nav ul li a {
+  color: #e65f00;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.profile-menu-boxes .top-nav {
+  background: #bbb;
+  order: 1;
+}
+.profile-menu-boxes .top-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.profile-menu-boxes .top-nav ul li {
+  border-bottom: 1px solid #333;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 49%;
+  padding: 0.3em 0;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.profile-menu-boxes .top-nav ul li:hover {
+  background: #333;
+}
+.profile-menu-boxes .top-nav ul li:nth-child(odd) {
+  border-right: 1px solid #333;
+a
 }

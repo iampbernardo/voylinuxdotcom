@@ -8,17 +8,17 @@ var gulp = require('gulp'),
 
 // Compile Stylus
 gulp.task('compile', function(){
-gulp.src('./src/assets/styl/main.styl')
+gulp.src('./assets/styl/main.styl')
   .pipe(stylus({
     'include css': true
   }))
-  .pipe(gulp.dest('./src/assets/css/'))
+  .pipe(gulp.dest('./assets/css/'))
   .pipe(connect.reload());
 });
 
 // Watch styl files and then exeute compile
 gulp.task('watch_styl', function(){
-  gulp.watch('./src/assets/styl/**/*.styl', ['compile']);
+  gulp.watch('./assets/styl/**/*.styl', ['compile']);
 });
 
 gulp.task('connect', function() {
