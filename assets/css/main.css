@@ -571,6 +571,50 @@ footer.main-footer {
   background-color: #3d3e41;
   color: #eee;
 }
+.copy {
+  color: #b8b8b8;
+  font-size: 0.8em;
+  text-align: center;
+}
+.copy a {
+  color: #fff;
+}
+.copy a .cc {
+  width: 20%;
+}
+/* TODO ::Refactoring
+  Reorder all the CSS
+*/
+.post-title-link {
+  transition: all 0.7s ease;
+  color: #4a4a4a;
+}
+.post-title-link:hover {
+  color: #2a2a2a;
+}
+.post-meta {
+  color: #9e9e9e;
+  font-size: 0.75em;
+/* font-size: 0.8125em /* 13px / 16px */
+  margin: 0;
+  text-transform: uppercase;
+}
+.post-meta .date:after {
+  content: ' | ';
+}
+.post-meta .published {
+  font-size: 0.75em;
+}
+.post-meta .post-tag {
+  color: #8e8e8e;
+  font-size: 0.75em;
+}
+.post-in-list {
+  margin-top: 2em;
+}
+.post-title-list {
+  margin-bottom: 0;
+}
 .wrapper {
   padding: 1em;
 }
