@@ -10,7 +10,9 @@ var gulp = require('gulp'),
 gulp.task('compile', function(){
 gulp.src('./assets/styl/main.styl')
   .pipe(stylus({
+    compress: true,
     'include css': true
+
   }))
   .pipe(gulp.dest('./assets/css/'))
   .pipe(connect.reload());
@@ -18,19 +20,14 @@ gulp.src('./assets/styl/main.styl')
 
 // Watch styl files and then exeute compile
 gulp.task('watch_styl', function(){
-  gulp.watch('./assets/styl/**/*.styl', ['compile']);
+  gulp.watch('./assets/styl/*.styl', ['compile']);
 });
 
 gulp.task('connect', function() {
   connect.server({
-    root: 'src',
+    root: '',
     livereload: true
   });
 });
 
-gulp.task('css', function () {
-  gulp.src('./app/**/*.css')
-    .pipe(connect.reload());
-});
-
-gulp.task('default', ['connect', 'watch_styl']);
+gulp.task('default', ['connect', 'compile',  'watch_styl']);

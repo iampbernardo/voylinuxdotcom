@@ -1,7 +1,7 @@
 /* Header */
 
 #main_header
-  background-image: url('../img/voylinux_header_bg.png')
+  background-image: url('../img/voylinux_header_bg.jpg')
   background-size: cover
   background-position: center center
   color: lighten(grey_extra_light, 50%)
@@ -13,6 +13,7 @@
     text-align: center
 
   #secondary_nav
+    font-family: sans_serif_font
     ul
       text-align: center
       li
@@ -21,11 +22,12 @@
           text-decoration: none
           color: #FFF
   .avatar
-    max-width: 40%
+    max-width: 30%
 
 #primary_nav
   border-bottom: 1px solid rgba(50, 50, 50, .3)
   border-top: 1px solid rgba(50, 50, 50, .3)
+  font-family: sans_serif_font
   text-align: center
   max-height: 0px
   overflow: hidden
@@ -59,19 +61,19 @@
 #wrapper
 
   a
-    color: dark_blue
+    color: darken(dark_blue, 20%)
     text-decoration: none
     &:hover
       text-decoration: underline dotted dark_blue
 
+  b
+    color: darken(dark_blue, 20%)
 
-
-
-
+  img
+    margin: .5em 0
+    width: 100%
 
 /* Footer */
-
-
 
 #main_footer
   background-color: grey_dark
