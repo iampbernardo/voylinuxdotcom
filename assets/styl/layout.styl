@@ -1,0 +1,79 @@
+/* Header */
+
+#main_header
+  background-image: url('../img/voylinux_header_bg.png')
+  background-size: cover
+  background-position: center center
+  color: lighten(grey_extra_light, 50%)
+  padding-bottom: 1em
+
+  .main_title
+    color: #FFF
+    font-size: 3em
+    text-align: center
+
+  #secondary_nav
+    ul
+      text-align: center
+      li
+        padding: 1em
+        a
+          text-decoration: none
+          color: #FFF
+  .avatar
+    max-width: 40%
+
+#primary_nav
+  border-bottom: 1px solid rgba(50, 50, 50, .3)
+  border-top: 1px solid rgba(50, 50, 50, .3)
+  text-align: center
+  max-height: 0px
+  overflow: hidden
+  transition: all 1s linear
+
+  &:hover
+    max-height: 1000px
+
+
+  ul
+    padding: 0
+    list-style: none
+    li
+      border-bottom: 1px solid rgba(50, 50, 50, .3)
+      line-height: 3
+      &:first-child:
+        border-top: 1px solid rgba(50, 50, 50, .3)
+      &:last-child
+        border: none
+      &:hover
+        background-color: dark_blue
+        a
+          color: #FFF
+      a
+        color: dark_blue
+        font-size: 1.3em
+        padding: 1em
+        text-decoration: none
+
+
+#wrapper
+
+  a
+    color: dark_blue
+    text-decoration: none
+    &:hover
+      text-decoration: underline dotted dark_blue
+
+
+
+
+
+
+/* Footer */
+
+
+
+#main_footer
+  background-color: grey_dark
+  color: grey_extra_light
+  padding()

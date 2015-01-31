@@ -1,0 +1,53 @@
+*
+  box-sizing: border-box
+
+/* Set html */
+html
+  font-size: base_font_size
+  color: grey_dark
+
+/* Sizes and positions */
+
+.full
+  width: 100%
+
+.page_size
+  max-width: page_size
+
+.center
+  display: block
+  margin: 0 auto
+
+.left
+  float: left
+
+.right
+  float: right
+
+.clearfix
+  clearfix()
+
+.padding
+  padding: 1em
+
+/* Navigations */
+.inline_nav
+  ul
+    padding: 0
+    list-style: none
+      li
+        display: inline
+
+/* shapes */
+.round
+  round()
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+  color: lighten(grey_dark, 20%)
+  &:hover
+    color: grey_dark
