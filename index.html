@@ -7,8 +7,11 @@
   <title>voylinux</title>
   <meta name="description" content="my personal blog">
 
+  <meta name="google-site-verification" content="py3YoQsPC5bH2RNi1lxefZe45AXLLuOlXDmSQPMTlZY" />
+
   <!-- CSS -->
   <link rel="stylesheet" href="assets/css/main.css">
+
 
 
 
@@ -17,7 +20,7 @@
   <header id="main_header" class="full">
     <div class="center page_size full clearfix">
       <div class="top_buttons  padding clearfix">
-        <a href="#" id="rss_button" class="left">
+        <a href="post.html" id="rss_button" class="left">
           <span class="fa fa-rss"> RSS</span>
         </a>
         <button id="menu_button" class="right">
@@ -119,7 +122,6 @@
       <div class="footer_section">
         <h3 class="footer_title">Condiciones</h3>
         <ul>
-          <li><a href="#">Derechos</a></li>
           <li><a href="#">Política de cookies</a></li>
         </ul>
       </div>
@@ -145,5 +147,22 @@
   <!--- // END DEV -->
 
   <script src="assets/js/main.js" async></script>
+  <!-- Piwik -->
+  <script type="text/javascript">
+    var _paq = _paq || [];
+    _paq.push(["setDomains", ["*.voylinux.com"]]);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="//piwik.voylinux.com/";
+      _paq.push(['setTrackerUrl', u+'piwik.php']);
+      _paq.push(['setSiteId', 1]);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <noscript><p><img src="//piwik.voylinux.com/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
 </body>
 </html>
