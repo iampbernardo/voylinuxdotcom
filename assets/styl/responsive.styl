@@ -1,7 +1,23 @@
+@media only screen and (min-width: 450px)
+  #main_footer
+    #footer_content
+      .footer_section
+        float: left
+        width: 50%
+        &:last-child
+          clear: right
+          display: block
+          width: 100%
+
+
 @media only screen and (min-width: 800px)
+
   html
     font-size: 20px
+    #menu_button
+      display: none
   #primary_nav
+    font-size: .9em
     max-height: 1000px
     padding: 0
     ul
@@ -17,8 +33,21 @@
           padding: 1em
           &:hover
             background-color: light_blue
+  #main_footer
+    #footer_content
+      font-size: .8em
+      .footer_section
+        float: left
+        text-align: left
+        width: 20%
+        &:last-child
+          float: left
+          width: 30%
+
 
 @media only screen and (min-width: 1000px)
-
-  h1
-    text-align: left
+  #wrapper
+    .post
+      h1,
+      .post-list-date
+        text-align: left

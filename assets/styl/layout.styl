@@ -7,6 +7,7 @@
   color: lighten(grey_extra_light, 50%)
   padding-bottom: 1em
 
+
   .main_title
     color: #FFF
     font-size: 3em
@@ -26,11 +27,27 @@
     margin-top: 1em
     max-width: 30%
 
+  .top_buttons
+    position: absolute
+    width: 100%
+    #menu_button
+      font-size: 1.8em
+      button(#FFF, #FFF)
+      vertical-align: baseline
+    #rss_button
+      button(rgba(255, 255, 255, 0.9), orange_)
+      &:hover
+        background-color: rgba(255, 255, 255, 0.1)
+      vertical-align: baseline
+
+
 #primary_nav
   border-bottom: 1px solid rgba(50, 50, 50, .3)
   border-top: 1px solid rgba(50, 50, 50, .3)
   font-family: sans_serif_font
+  font-size: .8em
   text-align: center
+  text-transform: uppercase
   max-height: 0px
   overflow: hidden
   transition: all 1s linear
@@ -40,6 +57,7 @@
 
 
   ul
+    background-color: lighten(grey_extra_light, 70%)
     padding: 0
     list-style: none
     li
@@ -54,8 +72,8 @@
         a
           color: #FFF
       a
-        color: dark_blue
-        font-size: 1.3em
+        //color: dark_blue
+        color: lighten(grey_dark, 30%)
         padding: 1em
         text-decoration: none
 
@@ -74,6 +92,34 @@
   img
     margin: .5em 0
     width: 100%
+
+  .post
+    line-height: 1.45
+    padding-bottom: 3em
+    margin-bottom: 5em
+    border-bottom: 1px solid lighten(grey_extra_light, 60%)
+    &:last-child
+      border: none
+    h1
+      line-height: .9
+      margin-top: 0
+    .post-list-date
+      color: darken(grey_light, 5%)
+      font-family: sans_serif_font
+      margin-bottom: 0
+      text-align: center
+      text-transform: uppercase
+
+    .post-footer
+      background-color: lighten(grey_extra_light, 80%)
+      font-size: .8em
+      color: darken(grey_light, 5%)
+      padding: .3em
+      text-transform: uppercase
+      a
+        //color: darken(grey_light, 20%)
+        text-decoration-style: dotted
+
 
 /* Footer */
 
@@ -121,3 +167,17 @@
     border-radius: 3px
     color: lighten(grey_light, 50%)
     padding: .2em
+
+  #footer_content
+    h3
+      color: darken(grey_light, 20%)
+    font-family: sans_serif_font
+    .footer_section
+      text-align: center
+      ul
+        padding: 0
+        list-style: none
+        li
+          line-height: 1.7
+          a
+            color: lighten(grey_light, 20%)
