@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+{{! Document Settings }}
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+{{! Page Meta }}
+<title>{{meta_title}}</title>
+<meta name="description" content="{{meta_description}}" />
+<meta name="HandheldFriendly" content="True" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="google-site-verification" content="py3YoQsPC5bH2RNi1lxefZe45AXLLuOlXDmSQPMTlZY" />
+<link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+{{! Styles'n'Scripts }}
+<link rel="stylesheet" type="text/css" href="{{asset "css/main.css"}}" />
+{{! Ghost outputs important style and meta data with this tag }}
+{{ghost_head}}
+</head>
+<body class="{{body_class}}">
+{{! Everything else gets inserted here }}
+{{{body}}}
+
+
+
+
+
+</section><!--// end wrapper -->
+<footer id="main_footer" class="full padding">
+  <aside id="footer_content" class="center page_size clearfix">
+    <div class="footer_section clearfix">
+        <h3 class="footer_title">Enlaces</h3>
+        <ul>
+          <li><a href="http://mozilla-hispano.org" target="blank">Mozilla Hispano</a></li>
+          <li><a href="http://desarrolloweb.com" target="blank">Desarrolloweb</a></li>
+          <li><a href="https://www.mozilla.org/es-ES/about/manifesto/" target="blank">Manifiesto de Mozilla</a></li>
+          <li><a href="http://whereisthelimit.com" target="blank">Where is the limit?</a></li>
+        </ul>
+    </div>
+    <div class="footer_section">
+      <h3 class="footer_title">Páginas</h3>
+      <ul>
+        <li><a href="/bio">Biografía</a></li>
+        <li><a href="/proyectos">Proyectos</a></li>
+        <li><a href="/colaboracion">Colaboraciones</a></li>
+      </ul>
+    </div>
+    <div class="footer_section">
+      <h3 class="footer_title">Condiciones</h3>
+      <ul>
+        <li><a href="/cookies">Política de cookies</a></li>
+      </ul>
+    </div>
+
+  </aside><!-- // end footer section -->
+
+  <div class="center page_size">
+    <aside class="footer_social inline_nav center">
+      <ul>
+        <li><a href="http://twitter.com/voylinux" class="fa fa-twitter" target="blank"></a></li>
+        <li><a href="http://github.com/voylinux" class="fa fa-github" target="blank"></a></li>
+        <li><a href="http://instagram.com/voylinux" class="fa fa-instagram" target="blank"></a></li>
+        <li><a href="http://facebook.com/voylinux" class="fa fa-facebook" target="blank"></a></li>
+      </ul>
+    </aside>
+    <small class="created_by center">Creado con <a class="footer-icon icon-ghost" href="https://ghost.org/" target="blank"> Ghost</a> y liberado en <a class="fa fa-github footer-icon" href="https://github.com/voylinux/voylinuxdotcom" target="blank"> Github</a> </small>
+    <small class="rights center">Todo el contenido (salvo indicado) tiene licencia <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" class="footer-icon fa fa-cc" target="blank"> creative commons</a></small>
+  </div><!--//end centered -->
+</footer><!--// end main footer -->
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setDomains", ["*.voylinux.com"]]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//piwik.voylinux.com/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 1]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//piwik.voylinux.com/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+{{! Ghost outputs important scripts and data with this tag }}
+{{ghost_foot}}
+<script src={{asset "js/main.js"}} async></script>
+
+</body>
+</html>

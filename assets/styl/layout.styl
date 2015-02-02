@@ -1,7 +1,6 @@
 /* Header */
 
 #main_header
-  background-image: url('../img/voylinux_header_bg.jpg')
   background-size: cover
   background-position: center center
   color: lighten(grey_extra_light, 50%)
@@ -56,8 +55,6 @@
   overflow: hidden
   transition: all 1s linear
 
-  &:hover
-    max-height: 1000px
 
 
   ul
@@ -107,6 +104,11 @@
     h1
       line-height: .9
       margin-top: 0
+      a
+        color: lighten(color: grey_dark, 10%)
+        text-decoration: none
+        &:hover
+          color: grey_dark
     .post-list-date
       color: darken(grey_light, 5%)
       font-family: sans_serif_font

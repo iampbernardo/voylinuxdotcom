@@ -1,0 +1,27 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+<header id="main_header" class="full" style="background-image: url({{@blog.cover}})">
+  <div class="center page_size full clearfix">
+    <div class="top_buttons  padding clearfix">
+      <a href="{{@blog.url}}/rss/" id="rss_button" class="left">
+        <span class="fa fa-rss"> RSS</span>
+      </a>
+      <button id="menu_button" class="right">
+        <i class="fa fa-bars"></i>
+      </button>
+    </div><!-- // end top buttons -->
+    <img src="{{@blog.logo}}" class="center round avatar" alt="personal avatar">
+    <nav id="secondary_nav" class="inline_nav">
+      <ul>
+        <li><a href="#">bio</a></li>
+        <li><a href="#">proyectos</a></li>
+      </ul>
+    </nav><!--// end secondary nav -->
+    <p class="center main_title">voylinux</p>
+  </div><!--//end centered -->
+</header><!--// end main header -->
+
+{{> "main_nav"}}
+
+<section id="wrapper" class="center page_size padding">
+  {{> "loop"}}

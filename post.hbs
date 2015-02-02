@@ -1,0 +1,59 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+{{#post}}
+<header id="main_header" class="full"
+  {{#if image}}
+  style="background-image: url({{image}})"
+  {{else}}
+  style="background-image: url({{@blog.cover}})"
+  {{/if}}>
+  <div class="center page_size full clearfix">
+    <div class="top_buttons  padding clearfix top_bar">
+      <a href="{{@blog.url}}/rss/" id="rss_button" class="left">
+        <span class="fa fa-rss"> RSS</span>
+      </a>
+      <button id="menu_button" class="right">
+        <i class="fa fa-bars"></i>
+      </button>
+    </div><!-- // end top buttons -->
+    <p class="center main_title">{{title}}</p>
+  </div><!--//end centered -->
+</header><!--// end main header -->
+
+{{> "main_nav"}}
+
+<section id="wrapper" class="center page_size padding">
+  <article class="{{post_class}} post">
+    <p class="post-list-date">{{date format="DD MMMM YYYY"}}</p>
+    {{content}}
+    <footer class="post-footer">
+      {{tags separator=" | "}}
+    </footer>
+
+    <div class="bio-block clearfix padding">
+      {{#author}}
+      <div class="bio-avatar left">
+        <img style="width:60%" src="{{image}}" class="round" alt="">
+      </div>
+      <div class="bio-text">
+        <h3 class="bio-name">{{name}}</h3>
+        <p>{{bio}}</p>
+      </div>
+      {{/author}}
+    </div>
+
+
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'voylinux'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+  </article>
+  {{/post}}

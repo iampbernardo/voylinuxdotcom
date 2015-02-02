@@ -84,8 +84,12 @@
 
 
       <div class="posts-navigation clearfix">
+        {{#if prev}}
         <a href="#" class="prev left"><i class="fa fa-chevron-left"></i> Anterior</a>
+        {{/if}}
+        {{#if next}}
         <a href="#" class="next right">Siguiente <i class="fa fa-chevron-right"></i></a>
+        {{#if}}
       </div>
 
       <div class="bio-block clearfix padding">
