@@ -62,6 +62,9 @@
     <small class="rights center">Todo el contenido (salvo indicado) tiene licencia <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" class="footer-icon fa fa-cc" target="blank"> creative commons</a></small>
   </div><!--//end centered -->
 </footer><!--// end main footer -->
+{{! Ghost outputs important scripts and data with this tag }}
+{{ghost_foot}}
+<script src="{{asset "js/main.js"}}" async></script>
 <!-- Piwik -->
 <script type="text/javascript">
   var _paq = _paq || [];
@@ -78,9 +81,6 @@
 </script>
 <noscript><p><img src="//piwik.voylinux.com/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
 <!-- End Piwik Code -->
-{{! Ghost outputs important scripts and data with this tag }}
-{{ghost_foot}}
-<script src="{{asset "js/main.js"}}" async></script>
 
 </body>
 </html>
