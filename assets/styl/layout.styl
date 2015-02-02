@@ -4,7 +4,7 @@
   background-size: cover
   background-position: center center
   color: lighten(grey_extra_light, 50%)
-  min-height: 200px
+  min-height: 150px
   padding-bottom: 1em
 
 
@@ -34,14 +34,14 @@
       font-size: 1.3em
       button(#FFF, #FFF)
       vertical-align: baseline
-    #rss_button
-      font-size: .8em
-      button(rgba(255, 255, 255, 0.9), orange_)
-      &:hover
-        background-color: rgba(255, 255, 255, 0.1)
-      vertical-align: baseline
+    .top-home
+      color: #FFF
+      font-size: 1.7em
+      text-decoration: none
+
   .top_bar
     position: relative
+
 
 
 #primary_nav
@@ -75,6 +75,20 @@
 
 
 #wrapper
+  position: relative
+  .header_secondary_buttons
+    box-sizing: border-box
+    position: absolute
+    right: 0
+    top: -10px
+    #rss_button
+      font-size: .8em
+      button(rgba(0, 0, 0, .40), orange_)
+      padding: .3em
+
+      &:hover
+        background-color: rgba(255, 255, 255, 0.1)
+      vertical-align: baseline
 
   a
     color: light_blue

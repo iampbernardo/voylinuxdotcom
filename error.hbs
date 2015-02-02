@@ -1,6 +1,5 @@
 {{!< default}}
 {{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
-{{#post}}
 <header id="main_header" class="full"
   {{#if image}}
   style="background-image: url({{image}})"
@@ -14,14 +13,18 @@
         <i class="fa fa-bars"></i>
       </button>
     </div><!-- // end top buttons -->
-    <h1 class="center main_title">{{title}}</h1>
+    <p class="center main_title">¡Uy!</p>
   </div><!--//end centered -->
 </header><!--// end main header -->
 
 {{> "main_nav"}}
 
 <section id="wrapper" class="center page_size padding">
-  <article class="{{post_class}} post">
-    {{content}}
+  <article class="post">
+    <h1 style="text-align: center;">Error 404</h1>
+    <p>
+      Parece que algo no ha ido como debería, pero no te preocupes, no hay nada roto.
+      Puedes <a href="{{@blog.url}}">volver al inicio</a> o pulsar el botón volver de tu navegador o movil.
+    </p>
+    <img src={{asset "img/abrazo.jpg"}} style="width: 45%; margin: 0px auto; display: block;" alt="Abrazo muñeco" />
   </article>
-  {{/post}}
